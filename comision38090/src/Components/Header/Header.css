@@ -1,0 +1,19 @@
+header {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    width: 5%;
+    padding: 5px;
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+    padding: 30px;
+}
+
+a {
+    padding: 10px;
+}
