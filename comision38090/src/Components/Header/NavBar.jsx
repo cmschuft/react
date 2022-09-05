@@ -1,21 +1,26 @@
 import React from "react";
 import logo from "../../assets/sparrows.png"
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { CartWidget } from "./CartWidget";
+import { Nav } from "./Nav/Nav";
 import "./Header.css"
 
 
-const Header = () => {
+const Header = ({nombre, apellido, id}) => {
+
+    const categorias = [{id:0, nombre:"Inicio"},
+                        {id:1, nombre:"Sobre Nosotros"},
+                        {id:2, nombre:"Productos"},
+                        {id:3, nombre:"Contacto"}];
+
     return (
         <header>
         <img src={logo} alt="Imagen de un Gorrion"/>
-        <h1>Tienda Calafate</h1>
-        <nav>
-            <a href="">Inicio</a>
-            <a href="">Sobre Nosotros</a>
-            <a href="">Productos</a>
-            <a href="">Contacto</a>
-        </nav>
-        <ShoppingCartIcon />
+        <h1>Bienvenido {nombre}</h1>
+
+        <Nav categorias={categorias} />
+
+        <CartWidget />
+        
         </header>
     )    
 }
