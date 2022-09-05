@@ -10,7 +10,7 @@ const App = () => {
     return (
         <>
             <NavBar nombre={nombreusuario} id="1" apellido={apellidoUsuario}></NavBar>
-            <ItemListContainer texto={greeting}></ItemListContainer>
+            {/* <ItemListContainer texto={greeting}></ItemListContainer> */}
         </>
                     
     )
