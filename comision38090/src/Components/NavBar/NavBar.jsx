@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../assets/sparrows.png";
 import CartWidget from "../CartWidget/CartWidget";
 import { Nav } from "../../Components/Nav/Nav";
+import { ItemCount } from "../ItemCount/ItemCount";
 
 const NavBar = ({nombre, apellido, id}) => {
 
