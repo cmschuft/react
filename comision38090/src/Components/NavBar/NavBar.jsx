@@ -16,7 +16,7 @@ const NavBar = ({nombre, apellido, id}) => {
     return (
         <header style={styles.container}>
         <img style={styles.imagen} src={logo} alt="Imagen de un Gorrion"/>
-        <h1>Bienvenido {nombre}</h1>
+        <h1>Tienda Calafate</h1>
 
         <Nav categorias={categorias} />
 
